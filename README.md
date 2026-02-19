@@ -4,6 +4,8 @@
 
 A community board where the Strety team shares posts and bookmarks the ones they want to get back to.
 
+<img src="public/preview.png" alt="Strety Commons preview" width="600" />
+
 ## Getting Started
 
 ### Prerequisites
