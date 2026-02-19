@@ -1,0 +1,31 @@
+<div class="text-center mb-4">
+  <small class="text-uppercase text-muted fw-semibold letter-spacing-wide">Strety</small>
+  <h2 class="fw-bold mt-1 mb-4">Community Board</h2>
+  <div class="hstack justify-content-center">
+    <div class="hstack gap-2 border rounded-pill px-4 py-3 bg-white lh-1">
+      <span class="fw-bold fs-5"><%= @total_posts %></span>
+      <span class="text-muted"><%= "Message".pluralize(@total_posts) %> Shared</span>
+    </div>
+  </div>
+</div>
+
+<hr class="mb-4">
+
+<h5 class="mb-3 text-muted fw-semibold">Recent Posts</h5>
+
+<div class="row g-4">
+  <% @recent_posts.each do |post| %>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title"><%= link_to post.title, post, class: "text-decoration-none" %></h5>
+          <p class="card-text text-muted flex-grow-1"><%= truncate(post.body, length: 120) %></p>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <small class="text-muted"><%= time_ago_in_words(post.created_at) %> ago</small>
+            <%= render "posts/bookmark_button", post: post %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

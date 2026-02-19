@@ -1,0 +1,17 @@
+<div class="mb-4">
+  <div class="d-flex justify-content-between align-items-start mb-3">
+    <h1><%= @post.title %></h1>
+    <%= render "posts/bookmark_button", post: @post %>
+  </div>
+
+  <p class="text-muted"><%= time_ago_in_words(@post.created_at) %> ago</p>
+
+  <div class="mb-4" style="white-space: pre-wrap;"><%= @post.body %></div>
+
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_post_path(@post), class: "btn btn-outline-secondary" %>
+    <%= button_to "Delete", @post, method: :delete, class: "btn btn-outline-danger",
+        data: { turbo_confirm: "Are you sure you want to delete this post?" } %>
+    <%= link_to "Back to Posts", posts_path, class: "btn btn-outline-primary" %>
+  </div>
+</div>

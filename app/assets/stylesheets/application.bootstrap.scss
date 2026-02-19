@@ -1,2 +1,14 @@
+$primary: #6364A7;
+$body-bg: #FEFFFF;
+$dark: #142233;
+
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+html {
+  background-color: #F5F5F5;
+}
+
+body {
+  background-color: transparent;
+}
