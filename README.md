@@ -45,8 +45,11 @@ The app will be available at http://localhost:3000.
 
 ## The Exercise
 
-Open [PITCH.md](PITCH.md) for the full brief. It describes the feature you'll be building: the bookmarks listing for Strety Commons.
+Open [PITCH.md](PITCH.md) first. It explains the two exercise tracks that now live in this repo.
 
-The short version: bookmarking a post already works (you can toggle the bookmark icon on any post). Your job is to build the other side of that, giving users a way to see and manage their bookmarks.
+- Track 1: [Bookmarks Listing](PITCH_BOOKMARKS_LISTING.md) for a narrower product/design-oriented build
+- Track 2: [Personalized Bookmarks](PITCH_PERSONALIZED_BOOKMARKS.md) for a more open-ended, product-minded Rails exercise
+
+Use the track your interviewer assigns. Both briefs build on the same baseline app and existing bookmark toggle.
 
 Take a look around the app first. Create some posts, bookmark a few, and get a feel for how things work before diving in.
